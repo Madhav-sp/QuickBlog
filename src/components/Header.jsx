@@ -37,18 +37,18 @@ const Header = () => {
             placeholder="Search for blogs"
             className="px-4 sm:px-6 py-3 rounded-md w-full sm:w-80 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#5b3cf1] transition"
           />
-          <button className="w-full sm:w-auto bg-[#5b3cf1] hover:bg-[#3e2ec0] text-white font-medium px-6 py-3 rounded-md transition">
+          <button className="w-full sm:w-auto bg-[#5b3cf1] hover:bg-[#3e2ec0] text-white font-medium px-6 py-3 rounded-md transition cursor-pointer">
             Search
           </button>
         </div>
 
         {/* Category Filter */}
-        <div className="mt-10 flex flex-wrap justify-center gap-3 px-2">
+        <div className="mt-10 flex flex-wrap justify-center gap-3 px-2 ">
           {categories.map((category, idx) => (
             <button
               key={idx}
               onClick={() => setActiveCategory(category)}
-              className="relative px-5 py-2 rounded-full text-sm font-medium border border-gray-400 transition duration-300"
+              className="relative px-5 py-2 rounded-full text-sm font-medium border border-gray-400 transition duration-300 cursor-pointer"
               style={{ zIndex: 1 }}
             >
               {activeCategory === category && (
@@ -74,7 +74,7 @@ const Header = () => {
 
       {/* Blog Cards Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {blog_data
             .filter(
               (blog) =>
@@ -102,7 +102,7 @@ const Header = () => {
             placeholder="Enter your email"
             className="px-4 sm:px-6 py-3 rounded-md w-full sm:w-80 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#5b3cf1] transition"
           />
-          <button className="w-full sm:w-auto bg-[#5b3cf1] hover:bg-[#3e2ec0] text-white font-medium px-6 py-3 rounded-md transition">
+          <button className="w-full sm:w-auto bg-[#5b3cf1] hover:bg-[#3e2ec0] text-white font-medium px-6 py-3 rounded-md transition cursor-pointer">
             Subscribe
           </button>
         </div>

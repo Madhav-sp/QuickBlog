@@ -12,7 +12,7 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink to="/admin">
-          <button className="flex items-center gap-1.5 px-4 py-2 rounded-md bg-[#5b3cf1] text-white font-medium hover:bg-[#4327da] transition">
+          <button className="flex items-center gap-1.5 px-4 py-2 rounded-md bg-[#5b3cf1] text-white font-medium hover:bg-[#4327da] transition cursor-pointer">
             Login <FaArrowRight />
           </button>
         </NavLink>

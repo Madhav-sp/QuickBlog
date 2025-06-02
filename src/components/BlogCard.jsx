@@ -7,7 +7,7 @@ import {useNavigate} from 'react-router-dom'
 const BlogCard = ({ blog }) => {
   const navigate=useNavigate();
   return (
-    <div onClick={()=> navigate(`/blog/${blog._id}`)} className="bg-white rounded-xl shadow-md overflow-hidden transition hover:shadow-xl w-full max-w-sm">
+    <div onClick={()=> navigate(`/blog/${blog._id}`)} className="bg-white rounded-xl shadow-md overflow-hidden transition hover:shadow-xl w-full max-w-sm cursor-pointer">
       <img
         src={blog.image}
         alt={blog.title}
